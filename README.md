@@ -23,14 +23,17 @@ This is a responsive and interactive **Employee Directory** built with **HTML**,
 ### employee-directory/
 
 ```
-    -> index.html # Main dashboard with employee cards
-    -> form.html # Add/Edit employee form
-    -> data.js # Initial mock employee data
-    -> css/
-        -> style.css # All styling (UI copied from design screenshots)
-    -> js/
-        -> script.js # Logic for listing, filtering, sorting, deleting
-        -> form.js # Logic for form validation and save/edit
+├── index.html # Main dashboard with employee cards
+├── form.html # Add/Edit employee form (reused for both add & edit)
+├── data.js # Initial mock employee data (inserted into localStorage)
+
+├── css/
+│ └── style.css # All global styling and layout (including responsive design)
+│ └── form.css # Dedicated styles for form UI (based on screenshot design)
+
+├── js/
+│ └── script.js # Logic for listing, filtering, searching, sorting, deleting
+│ └── form.js # Handles form validation, saving and editing employee data
 ```
 
 ---
