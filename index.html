@@ -44,9 +44,12 @@
 
       <aside id="filterSidebar">
         <h3>Filter Employees</h3>
-        <input type="text" id="filterName" placeholder="First Name" />
-        <input type="text" id="filterDept" placeholder="Department" />
-        <input type="text" id="filterRole" placeholder="Role" />
+        <label for="firstName">First name</label><br />
+        <input type="text" id="filterName" placeholder="" /><br />
+        <label for="department">Department</label><br />
+        <input type="text" id="filterDept" placeholder="" /><br />
+        <label for="role">Role</label>
+        <input type="text" id="filterRole" placeholder="" />
         <button onclick="applyFilters()">Apply</button>
         <button onclick="resetFilters()">Reset</button>
       </aside>

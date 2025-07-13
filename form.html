@@ -4,20 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Employee</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
   </head>
   <body>
     <div class="form-container">
       <h2>Add Employee</h2>
       <form onsubmit="saveEmployee(event)">
+        <label for="firstName">First name</label>
         <input type="text" id="firstName" placeholder="First name" required />
+
+        <label for="lastName">Last name</label>
         <input type="text" id="lastName" placeholder="Last name" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <input type="text" id="department" placeholder="Department" required />
-        <input type="text" id="role" placeholder="Role" required />
-        <div class="form-buttons">
-          <button type="button" onclick="cancelForm()">Cancel</button>
-          <button type="submit">Add</button>
+
+        <div class="row">
+          <div class="col">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="col">
+            <label for="department">Department</label>
+            <select id="department" required>
+              <option value="">Select</option>
+              <option value="HR">HR</option>
+              <option value="IT">IT</option>
+              <option value="Finance">Finance</option>
+              <option value="Sales">Sales</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="role">Role</label>
+        <select id="role" required>
+          <option value="">Select</option>
+          <option value="Manager">Manager</option>
+          <option value="Developer">Developer</option>
+          <option value="Analyst">Analyst</option>
+          <option value="Intern">Intern</option>
+        </select>
+
+        <div class="btn-group">
+          <button type="button" class="cancel" onclick="cancelForm()">
+            Cancel
+          </button>
+          <button type="submit" class="add">Add</button>
         </div>
       </form>
     </div>
